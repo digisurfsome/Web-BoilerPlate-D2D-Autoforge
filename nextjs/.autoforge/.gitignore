@@ -1,0 +1,10 @@
+# AutoForge runtime files
+features.db
+features.db-journal
+features.db-wal
+features.db-shm
+.agent.lock
+*.log
+
+# Claude settings are generated at runtime
+.claude/

@@ -1,0 +1,48 @@
+# Project-Specific Allowed Commands — Next.js SaaS Boilerplate
+# ==============================================================
+# Location: {project_dir}/.autoforge/allowed_commands.yaml
+#
+# These commands are allowed IN ADDITION to the global defaults
+# (npm, npx, node, git, curl, ls, cat, grep, etc.).
+#
+# See: https://github.com/digisurfsome/Greptacular/blob/main/examples/README.md
+
+version: 1
+
+commands:
+  # ==========================================
+  # Next.js / Node.js Development
+  # ==========================================
+
+  - name: pnpm
+    description: pnpm package manager (project uses pnpm, not npm)
+
+  - name: next
+    description: Next.js CLI (dev, build, start, lint)
+
+  - name: tsc
+    description: TypeScript compiler for type checking
+
+  - name: eslint
+    description: ESLint for code linting
+
+  # ==========================================
+  # Supabase Local Development
+  # ==========================================
+
+  - name: supabase
+    description: Supabase CLI for local dev, migrations, and type generation
+
+  # ==========================================
+  # Stripe CLI (for local webhook testing)
+  # ==========================================
+
+  - name: stripe
+    description: Stripe CLI for webhook forwarding and fixture loading
+
+  # ==========================================
+  # Code Formatting
+  # ==========================================
+
+  - name: prettier
+    description: Prettier code formatter
